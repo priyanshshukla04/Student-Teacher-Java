@@ -1,0 +1,105 @@
+package mypack;
+import pack.*;
+
+
+final class Faculty
+{
+int salary;
+Scanner fac=new Scanner(System.in);
+void NameOfFaculty()
+{
+System.out.println("Enter the name of faculty");
+String name=fac.nextLine();
+private Salary()
+{
+System.out.println("Enter the salary of the faculty");
+salary=fac.nextInt();
+}
+}
+}
+
+
+public class Student
+{
+int rollno,
+int sapid;
+String name;
+String branch;
+int num1;
+int num2;
+void Entrance()
+{
+System.out.println("enter the marks in entrance paper1");
+num1=obj.nextInt();
+System.out.println("enter the marks in entrance paper2");
+num2=obj.nextInt();
+try{
+System.out.println("the result is"+num1/num2);
+}catch (ArithmeticException e){
+System.out.println("can't be divided by zero");
+}
+StudentInformation(int rollno,String name,int sapid,String branch)
+{
+System.out.println("Enter the rollno of student");
+this.rollno=rollno;
+System.out.println("Enter the name of student");
+this.name=name;
+System.out.println("Enter the sapid of student");
+this.sapid=sapid;
+System.out.println("Enter the branch of students");
+this.branch=branch;
+}
+void Show()
+{
+System.out.println(rollno+""+name+""+sapid+""+branch);
+}
+}
+}
+
+
+public class Examination
+{
+int date;
+Scanner exami=new Scanner(System.in);
+Exams(String subject,int date)
+{
+System.out.println("Enter the subject and date of examination");
+}
+Exams(String subject,int date,int marks)
+{
+System.out.println("Enter the marks, subject and date");
+}
+
+
+class Final
+{
+public static void main(String[] args)
+{
+UPES inter=new UPES();
+inter.NumberOfAwards();
+inter. YearOfInnauguration();
+SportsActivities sport=new SportActivities();
+sport.CollegeInformation();
+sport.AveragePackage();
+sport.CoursesInformation();
+sport.Fees();
+sport.PlacementInformation();
+sport.AveragePackage();
+sport.SportsInformation();
+CollegeBank sav=new SBI();
+System.out.println("Total savings of college"+sav.Savings());
+CollegeBank sav=new PNB();
+System.out.println("Total savings of college"+sav.Savings());
+Faculty fac=new Faculty();
+fac.NameOfFaculty();
+fac.Salary();
+Student stu=new Student();
+stu.Entrance();
+Student stu=new Student(90,"Priyansh",500068845,"BigData");
+stu1.Show();
+System.out.println(Examination.Exams("OOPS",10));
+System.out.println(Examination.Exams("Maths",11,90));
+}
+}
+
+
