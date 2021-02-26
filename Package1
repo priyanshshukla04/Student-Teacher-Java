@@ -1,0 +1,121 @@
+package pack;
+import java.util.Scanner;
+interface University
+{
+public void NumberOfAwards();
+public void YearOfInnauguration();
+}
+public class UPES implements University
+{
+public void NumberOfAwards()
+{
+System.out.println("Number of awards"+169);
+}
+public void YearOfInnauguration()
+{
+System.out.println("year of innauguration"+2003);
+}
+}
+public class College
+{
+final int TotalStrength=11000;
+int rating;
+String Chancellor="Mr. Jha";
+Scanner coll=new Scanner(System.in);
+final void CollegeInformation()
+{
+System.out.println("Total strength of college is"+TotalStrength);
+System.out.println("Enter the name of college");
+String name=coll.nextLine();
+coll.nextLine();
+System.out.println("Enter the location of college");
+String address=coll.nextLine();
+coll.nextLine();
+System.out.println("Enter the NAAC rating");
+rating=coll.next();
+if(rating>3)
+System.out.println("Good College");
+else
+Systm.out.println("Average college");
+}
+int AveragePackage()
+{
+return 4;
+}
+}
+public class Courses extends College
+{
+int number,i;
+String Chancellor="Mr.Naresh";
+Scanner cour=new Scanner(System.in);
+void CoursesInformation()
+{
+System.out.println(Chancellor);
+System.out.println(super.Chancellor);
+System.out.println("Enter number of courses offered by college");
+number=cour.nextInt();
+String name="";
+System.out.println("Enter the courses offered by colleges");
+for(i=0;i<=number;i++)
+{
+name=cour.nextLine();
+System.out.println(name);
+}
+}
+}
+public class Fees extends Courses
+{
+Scanner fee=new Scanner(System.in);
+void Fees()
+{
+System.out.println("Enter the average fees of college");
+fees=fee.nextInt();
+}
+}
+public class Placement extends Fees
+{
+Scanner place=new Scanner(System.in);
+void PlacementInformation()
+{
+System.out.println("Enter the maximum and minimum package");
+max=place.nextInt();
+min=place.nextInt();
+}
+int AveragePackage()
+{
+return 5;
+}
+}
+public class SportsActivities extends Placement
+{
+int i;
+Scanner act=new Scanner(System.in);
+void SportsInformation()
+{
+String activities="";
+System.out.println("Enter the sports activities organized in college");
+for(i=0;i<=n;i++);
+{
+activities=act.nextLine();
+System.out.println(activities);
+}
+}
+}
+abstract class CollegeBank
+{
+abstract int Savings();
+}
+class SBI extends CollegeBank
+{
+int Savings()
+{
+return 1000000;
+}
+}
+class PNB extends CollegeBank
+{
+int Savings()
+{
+return 2000000;
+}
+}
